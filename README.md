@@ -1,6 +1,6 @@
 # AI Agent Learning Lab
 
-I’m using this repo to understand how AI agent systems work by building small projects from first principles, testing the underlying ideas, and comparing them with the abstractions used by popular agent platforms and frameworks.
+I’m using this repo to understand how AI agent systems work by building small projects from first principles, testing the underlying ideas, and comparing them with the abstractions used by popular agent platforms and frameworks. You can follow along with me at [adityakamath.com](https://adityakamath.com).
 
 ## What this is
 
