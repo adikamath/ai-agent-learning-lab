@@ -1,0 +1,50 @@
+[
+  {
+    "name": "AtlasGrid",
+    "category": "energy software",
+    "description": "Software for monitoring and forecasting distributed energy usage.",
+    "funding_usd_m": 18,
+    "arr_usd_m": 6,
+    "employee_count": 40
+  },
+  {
+    "name": "BeaconOps",
+    "category": "developer tools",
+    "description": "Incident analysis tools for small infrastructure teams.",
+    "funding_usd_m": 12,
+    "arr_usd_m": 4,
+    "employee_count": 31
+  },
+  {
+    "name": "CedarAI",
+    "category": "healthcare operations",
+    "description": "Workflow software for coordinating non-clinical hospital operations.",
+    "funding_usd_m": 25,
+    "arr_usd_m": 8,
+    "employee_count": 58
+  },
+  {
+    "name": "HarborStack",
+    "category": "developer tools",
+    "description": "Deployment and environment management for internal platform teams.",
+    "funding_usd_m": 20,
+    "arr_usd_m": 7,
+    "employee_count": 49
+  },
+  {
+    "name": "LumenRoute",
+    "category": "logistics software",
+    "description": "Route planning and capacity forecasting for regional carriers.",
+    "funding_usd_m": 9,
+    "arr_usd_m": 3,
+    "employee_count": 27
+  },
+  {
+    "name": "QuarryFlow",
+    "category": "industrial software",
+    "description": "Production planning tools for construction-material suppliers.",
+    "funding_usd_m": 15,
+    "arr_usd_m": 5,
+    "employee_count": 36
+  }
+]

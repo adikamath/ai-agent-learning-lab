@@ -38,4 +38,4 @@ This repo could also be useful for product managers, engineers, and other techni
 
 ## Modules
 
-Modules will be added as I work through them.
+- [Lesson 1: Agent Basics](lesson-01-agent-basics/README.md) — Compare three approaches to the same problem and examine where control lives in each one.
