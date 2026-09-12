@@ -38,4 +38,4 @@ This repo could also be useful for product managers, engineers, and other techni
 
 ## Modules
 
-- [Lesson 1: Agent Basics](lesson-01-agent-basics/README.md) — Compare three approaches to the same problem and examine where control lives in each one.
+- [Lesson 1: What Makes an AI Application an Agent?](lesson-01-agent-basics/README.md) — Compare three approaches to the same problem and examine where control lives in each one.

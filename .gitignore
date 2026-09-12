@@ -3,3 +3,9 @@
 
 # macOS metadata
 .DS_Store
+
+# Local Python virtual environments
+.venv/
+
+# Local environment variables and API keys
+.env
