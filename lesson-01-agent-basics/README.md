@@ -84,6 +84,12 @@ Before each change, I’ll write down what I expect the agent to do. Then I’ll
 
 The implementation lives in [`lesson-01-agent-basics.ipynb`](lesson-01-agent-basics.ipynb). The notebook builds each test case incrementally so the differences in control flow remain visible.
 
+Install the notebook dependencies with:
+
+```bash
+./lesson-01-agent-basics/.venv/bin/python -m pip install -r lesson-01-agent-basics/requirements.txt
+```
+
 Create a local `.env` file from `.env.example`, replace the example value with your own OpenAI API key, and keep the real `.env` file out of source control.
 
 ## Troubleshooting
@@ -95,7 +101,7 @@ If the notebook reports `ModuleNotFoundError: No module named 'dotenv'`, the not
 First, install the dependencies using the virtual environment's Python:
 
 ```bash
-./lesson-01-agent-basics/.venv/bin/python -m pip install openai python-dotenv ipykernel
+./lesson-01-agent-basics/.venv/bin/python -m pip install -r lesson-01-agent-basics/requirements.txt ipykernel
 ```
 
 Then, in VS Code:

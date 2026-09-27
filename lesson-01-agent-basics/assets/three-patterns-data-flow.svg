@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title description">
   <title id="title">Expected data flows for three AI application patterns</title>
-  <desc id="description">Three vertical flows shown side by side: an LLM-only application, a deterministic workflow, and a simple agent.</desc>
+  <desc id="description">Three vertical flows shown side by side: an LLM-only application, an LLM-routed LangGraph workflow, and a simple agent.</desc>
 
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -24,7 +24,7 @@
   <rect class="panel" x="815" y="20" width="360" height="605" rx="12"/>
 
   <text class="heading" x="205" y="58" text-anchor="middle">LLM only</text>
-  <text class="heading" x="600" y="58" text-anchor="middle">Workflow / graph</text>
+  <text class="heading" x="600" y="58" text-anchor="middle">LLM-routed graph</text>
   <text class="heading" x="995" y="58" text-anchor="middle">Simple agent</text>
 
   <!-- LLM-only flow -->
@@ -45,31 +45,36 @@
   <text class="note" x="205" y="500">One model call</text>
   <text class="note" x="205" y="520">No tools or execution loop</text>
 
-  <!-- Deterministic workflow -->
-  <rect class="node" x="470" y="82" width="260" height="56" rx="8"/>
-  <text class="label" x="600" y="110">Question</text>
+  <!-- LLM-routed LangGraph workflow -->
+  <rect class="node" x="470" y="72" width="260" height="52" rx="8"/>
+  <text class="label" x="600" y="98">Question</text>
 
-  <path class="arrow" d="M 600 138 L 600 174"/>
+  <path class="arrow" d="M 600 124 L 600 149"/>
 
-  <rect class="node" x="470" y="177" width="260" height="56" rx="8"/>
-  <text class="label" x="600" y="205">Application logic</text>
+  <rect class="node model" x="470" y="152" width="260" height="52" rx="8"/>
+  <text class="label" x="600" y="178">LLM selects route</text>
 
-  <path class="arrow" d="M 600 233 L 600 269"/>
+  <path class="arrow" d="M 600 204 L 600 229"/>
 
-  <rect class="node" x="470" y="272" width="260" height="56" rx="8"/>
-  <text class="label" x="600" y="300">Load company data</text>
+  <rect class="node" x="470" y="232" width="260" height="52" rx="8"/>
+  <text class="label" x="600" y="258">Validate route</text>
 
-  <path class="arrow" d="M 600 328 L 600 364"/>
+  <path class="arrow" d="M 600 284 L 600 309"/>
 
-  <rect class="node" x="470" y="367" width="260" height="56" rx="8"/>
-  <text class="label" x="600" y="395">Calculate + rank</text>
+  <rect class="node" x="470" y="312" width="260" height="52" rx="8"/>
+  <text class="label" x="600" y="338">Fixed calculation path</text>
 
-  <path class="arrow" d="M 600 423 L 600 459"/>
+  <path class="arrow" d="M 600 364 L 600 389"/>
 
-  <rect class="node" x="470" y="462" width="260" height="56" rx="8"/>
-  <text class="label" x="600" y="490">Answer</text>
+  <rect class="node model" x="470" y="392" width="260" height="52" rx="8"/>
+  <text class="label" x="600" y="418">LLM explains results</text>
 
-  <text class="note" x="600" y="568">Code chooses every step</text>
+  <path class="arrow" d="M 600 444 L 600 469"/>
+
+  <rect class="node" x="470" y="472" width="260" height="52" rx="8"/>
+  <text class="label" x="600" y="498">Answer</text>
+
+  <text class="note" x="600" y="568">LangGraph constrains the larger path</text>
 
   <!-- Agent flow -->
   <rect class="node" x="865" y="76" width="260" height="52" rx="8"/>
