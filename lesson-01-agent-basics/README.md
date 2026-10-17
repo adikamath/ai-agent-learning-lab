@@ -38,14 +38,14 @@ This is the simplest version, but it also asks the model to do everything correc
 Question + dataset → LLM → Answer
 ```
 
-### 2. LLM-routed workflow
+### 2. LangGraph agent
 
-The second version gives the model one bounded decision: interpret the question and select the appropriate analysis from a set of supported options. The application validates that selection, runs the corresponding calculation and ranking steps, and then asks the model to explain the verified results.
+The second version gives the model a small set of calculation tools. It chooses the tool that fits the question, and LangGraph follows the matching conditional edge to run it. The graph then passes the verified result to the model for a short explanation.
 
-The model influences the route, but the application still controls the larger workflow. It cannot invent new steps, repeatedly call tools, or decide when execution should stop.
+The model can change the path by choosing an action, but LangGraph still owns the available tools, valid transitions, shared state, and stopping point. It cannot invent a new tool or take an unbounded sequence of actions.
 
 ```text
-Question → LLM selects route → Application runs fixed steps → LLM explains → Answer
+Question → LLM chooses tool → LangGraph routes to tool → Verified result → LLM explains → Answer
 ```
 
 ### 3. Harness-based agent
